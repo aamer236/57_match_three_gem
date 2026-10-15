@@ -36,6 +36,34 @@ python main.py
 
 **Controls:** Left-click two adjacent gems to swap them. Press R to restart.
 
+## Completed Implementation
+
+All four tasks below are implemented in the current game:
+
+- Invalid swaps revert without spending a move.
+- A successful swap spends one move, including all its cascades. Match waves score
+  at x1, x2, x3, and so on; each new successful swap starts at x1. The HUD shows
+  the multiplier and points from the latest wave. Falling gems settle between waves.
+- Matching four or more gems creates a glowing striped gem. Horizontal matches
+  create row clears; vertical matches create column clears. Matching a striped
+  gem clears that entire line, including other specials caught in the blast.
+  The surviving special is not counted as a cleared gem for scoring.
+- After more than five seconds without mouse or keyboard input, an available swap
+  pair pulses. Input clears the hint; hints do not appear during falls or game over.
+
+The startup crash was fixed separately by restoring the missing column loop in
+`drop_and_refill()`. Win/loss overlays wait for the final cascade to finish.
+
+### Before and After Videos
+
+- [Before: 10 seconds](recordings/before.mp4)
+- [After: 10 seconds](recordings/after.mp4)
+
+These are recordings of the actual game renderer with scripted clicks and
+reproducible board setups. The before recording includes only the startup repair;
+all four task behaviors are still unfixed in that version. See
+[recording notes](recordings/README.md) for timing, source snapshots, and reproduction.
+
 
 ## Tasks to Complete
 

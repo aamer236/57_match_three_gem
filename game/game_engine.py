@@ -15,6 +15,7 @@ class GameEngine:
         self.font_small = pygame.font.SysFont(None, 24)
 
     def handle_click(self, mouse_pos):
+        self.board.note_input()
         if self.board.is_game_over() or self.board.is_animating():
             return
 
@@ -53,6 +54,16 @@ class GameEngine:
         )
         hud_surf = self.font_small.render(hud_text, True, (80, 220, 180))
         screen.blit(hud_surf, (self.width // 2 - hud_surf.get_width() // 2, 55))
+
+        if self.board.hint_pair:
+            status = "Try swapping the highlighted gems"
+        elif self.board.combo_multiplier:
+            label = "CASCADE" if self.board.combo_multiplier > 1 else "MATCH"
+            status = f"{label} x{self.board.combo_multiplier}  |  +{self.board.last_points} points"
+        else:
+            status = "Match 4 to create a striped line-clear gem"
+        status_surf = self.font_small.render(status, True, (240, 210, 120))
+        screen.blit(status_surf, (self.width // 2 - status_surf.get_width() // 2, 85))
 
         self.board.render(screen)
 

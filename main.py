@@ -18,6 +18,9 @@ def main():
     running = True
     while running:
         for event in pygame.event.get():
+            if event.type in (pygame.MOUSEMOTION, pygame.MOUSEBUTTONDOWN,
+                              pygame.MOUSEBUTTONUP, pygame.KEYDOWN, pygame.KEYUP):
+                engine.board.note_input()
             if event.type == pygame.QUIT:
                 running = False
             elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:

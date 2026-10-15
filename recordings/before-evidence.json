@@ -1,0 +1,68 @@
+{
+  "source_sha256": {
+    "main.py": "0208b21be6fe10293c6cfc8a0c6b126e72c8c05acee32d2372ed1a045642ff2b",
+    "game/board.py": "aea1d99b39ef3df6ca7707c35181d7acc7f4eac08e345be8b6c26ce14748aaf7",
+    "game/game_engine.py": "8501f93b97a9f0edba3ff1ab77f06887782b2b0facb94a1a74c368e9f1544008",
+    "tools/record_demo.py": "32ae7dbcebbb1c2fea1bb673d63b01cc8a8c425ebf8932e923de48a7dff4dab1"
+  },
+  "frames": 600,
+  "fps": 60,
+  "observations": [
+    {
+      "frame": 325,
+      "time_seconds": 5.416666666666667,
+      "score": 0,
+      "moves": 20,
+      "special_gems": 0,
+      "hint": null,
+      "combo": null,
+      "line_clear": null
+    },
+    {
+      "frame": 360,
+      "time_seconds": 6.0,
+      "score": 0,
+      "moves": 19,
+      "special_gems": 0,
+      "hint": null,
+      "combo": null,
+      "line_clear": null
+    },
+    {
+      "frame": 430,
+      "time_seconds": 7.166666666666667,
+      "score": 40,
+      "moves": 19,
+      "special_gems": 0,
+      "hint": null,
+      "combo": null,
+      "line_clear": null
+    },
+    {
+      "frame": 480,
+      "time_seconds": 8.0,
+      "score": 40,
+      "moves": 18,
+      "special_gems": 0,
+      "hint": null,
+      "combo": null,
+      "line_clear": null
+    },
+    {
+      "frame": 585,
+      "time_seconds": 9.75,
+      "score": 60,
+      "moves": 19,
+      "special_gems": 0,
+      "hint": null,
+      "combo": null,
+      "line_clear": null
+    }
+  ],
+  "checks": [
+    false,
+    false,
+    false,
+    false
+  ]
+}

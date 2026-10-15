@@ -1,0 +1,110 @@
+{
+  "source_sha256": {
+    "main.py": "12dbc58b97addc84761a6cb1f4680b0d69ac5fa2ce8f2215af12c80b19169395",
+    "game/board.py": "003eb703701aaa6db2e7dc64664d7a95b1633494dddd1f21a730c9aa82b8e0b7",
+    "game/game_engine.py": "7fced7d0be68908e62db91574ec9829aae40d6c0606f8444b9f373e2c24c0285",
+    "tools/record_demo.py": "2bab956ccca35a558a27d130ebc18f3b063436bf36be97989ba622abd0c54568"
+  },
+  "frames": 600,
+  "fps": 60,
+  "observations": [
+    {
+      "frame": 325,
+      "time_seconds": 5.416666666666667,
+      "score": 0,
+      "moves": 20,
+      "special_gems": 0,
+      "hint": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "combo": 0,
+      "line_clear": null
+    },
+    {
+      "frame": 360,
+      "time_seconds": 6.0,
+      "score": 0,
+      "moves": 20,
+      "special_gems": 0,
+      "hint": null,
+      "combo": 0,
+      "line_clear": null
+    },
+    {
+      "frame": 430,
+      "time_seconds": 7.166666666666667,
+      "score": 30,
+      "moves": 19,
+      "special_gems": 1,
+      "hint": null,
+      "combo": 1,
+      "line_clear": null
+    },
+    {
+      "frame": 480,
+      "time_seconds": 8.0,
+      "score": 140,
+      "moves": 18,
+      "special_gems": 0,
+      "hint": null,
+      "combo": 1,
+      "line_clear": [
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          7
+        ]
+      ]
+    },
+    {
+      "frame": 585,
+      "time_seconds": 9.75,
+      "score": 90,
+      "moves": 19,
+      "special_gems": 0,
+      "hint": null,
+      "combo": 2,
+      "line_clear": null
+    }
+  ],
+  "checks": [
+    true,
+    true,
+    true,
+    true
+  ]
+}
